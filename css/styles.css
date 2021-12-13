@@ -80,7 +80,7 @@ footer p {
   background-color: white;
 }
 
-.nav:hover {
+.main-nav li:hover {
   cursor: pointer;
   transition: all 0.1s linear;
   background-color: mediumaquamarine;
