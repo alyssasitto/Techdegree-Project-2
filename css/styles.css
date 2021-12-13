@@ -1,3 +1,7 @@
+/* ================================= 
+  Universal Layout Styles
+==================================== */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +10,7 @@
 }
 body {
   background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
 }
 ul {
   list-style: none;
@@ -16,6 +21,11 @@ a {
   text-decoration: none;
   color: black;
 }
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
 h1,
 h2 {
   font-family: "Barlow Condensed", sans-serif;
@@ -30,11 +40,11 @@ h2 {
 }
 h3 {
   padding: 1rem;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 header p {
   padding: 2rem;
+  color: grey;
 }
 header img {
   padding-top: 2rem;
@@ -45,13 +55,13 @@ main {
 }
 main p {
   padding: 0px 30px 30px;
-  font-family: "PT Sans", sans-serif;
 }
 main img {
   width: 100%;
 }
 footer p {
   padding: 1rem;
+  color: grey;
 }
 .closing {
   padding: 1rem;
@@ -69,12 +79,123 @@ footer p {
   margin: 5px auto;
   background-color: white;
 }
-li:hover {
+
+.nav:hover {
   cursor: pointer;
   transition: all 0.1s linear;
   background-color: mediumaquamarine;
 }
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
 
 .large-screen-footer {
   display: none;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0 auto;
+  }
+  .nav-list,
+  .main-nav,
+  .list-items,
+  .flex-header,
+  .portfolio-content,
+  .large-screen-footer,
+  .footer-nav {
+    display: flex;
+  }
+  .nav-list ul {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav-list li {
+    background-color: whitesmoke;
+    flex-direction: row;
+  }
+  .flex-header {
+    flex-direction: row-reverse;
+  }
+  .flex-header img {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width: 30%;
+  }
+  .portfolio-content {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .main-section {
+    flex-grow: 0;
+    width: 40%;
+  }
+  .main-section img {
+    width: 100%;
+    height: auto;
+  }
+  .mobile-footer {
+    display: none;
+  }
+  .large-screen-footer {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer-name {
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .footer li {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0 auto;
+  }
+  .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+  .main-header p {
+    padding: 2rem;
+    line-height: 1.7;
+  }
+  .main-header img {
+    width: 50%;
+  }
+
+  main {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .main-section {
+    flex-grow: 0;
+    width: 30%;
+  }
+  .main-section img {
+    width: 100%;
+    height: auto;
+  }
 }

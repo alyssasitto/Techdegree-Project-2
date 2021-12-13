@@ -14,73 +14,80 @@
     <title>Alyssa's portfolio</title>
   </head>
   <body>
-    <header class="flex">
-      <h1>Alyssa Sitto</h1>
-      <nav class="nav-list">
-        <ul class="list-flex">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-      <img src="images/responsive-layout-profile.png" alt="" />
-      <p>
-        Hi! I'm a front-end web developer who loves responsive design and css. I
-        recently finished a degree in front-end development at Treehouse and am
-        excited to put all my skills to use!
-      </p>
+    <header class="main-header">
+      <div class="header-nav">
+        <h1><a hfref="#">Alyssa Sitto</a></h1>
+        <nav class="nav-list">
+          <ul class="main-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="header-contact"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex-header">
+        <img src="images/responsive-layout-profile.png" alt="" />
+        <p>
+          Hi! I'm a front-end web developer who loves responsive design and css.
+          I recently finished a degree in front-end development at Treehouse and
+          am excited to put all my skills to use!
+        </p>
+      </div>
     </header>
     <main>
       <div id="main-content">
         <h2 id="portfolio">PORTFOLIO</h2>
-        <section class="content">
-          <img src="images/portfolio-1.png" />
-          <h3>Marketing Page</h3>
-          <p>
-            This project shows the front page of a marketing website meant for a
-            specific business I'm interested in.
-          </p>
-        </section>
-        <section class="content">
-          <img src="images/portfolio-2.png" />
-          <h3>Search Page</h3>
-          <p>
-            This project searches through a specific database to find
-            information that the user is trying to look up.
-          </p>
-        </section>
-        <section class="content">
-          <img src="images/portfolio-3.png" />
-          <h3>Travel App</h3>
-          <p>
-            This project compares travel times based on different transportation
-            methods and tells you the best one.
-          </p>
-        </section>
-        <section class="content">
-          <img src="images/portfolio-4.png" />
-          <h3>Map of Favorite Spots</h3>
-          <p>
-            This project uses mapping apis to plot points for my favorite spots
-            in the city for a do-it-yourself walking tour.
-          </p>
-        </section>
-        <section class="content">
-          <img src="images/portfolio-5.png" />
-          <h3>Photo Gallery</h3>
-          <p>
-            This project shows pictures from a recent trip of the viewer and
-            allows them to easily navigate through photos.
-          </p>
-        </section>
-        <section class="content">
-          <img src="images/portfolio-6.png" />
-          <h3>Calculator</h3>
-          <p>
-            Someone can enter in the numbers they want, and press the big blue
-            button and get the result.
-          </p>
-        </section>
+        <div class="portfolio-content">
+          <section class="main-section">
+            <img src="images/portfolio-1.png" />
+            <h3>Marketing Page</h3>
+            <p>
+              This project shows the front page of a marketing website meant for
+              a specific business I'm interested in.
+            </p>
+          </section>
+          <section class="main-section">
+            <img src="images/portfolio-2.png" />
+            <h3>Search Page</h3>
+            <p>
+              This project searches through a specific database to find
+              information that the user is trying to look up.
+            </p>
+          </section>
+          <section class="main-section">
+            <img src="images/portfolio-3.png" />
+            <h3>Travel App</h3>
+            <p>
+              This project compares travel times based on different
+              transportation methods and tells you the best one.
+            </p>
+          </section>
+          <section class="main-section">
+            <img src="images/portfolio-4.png" />
+            <h3>Map of Favorite Spots</h3>
+            <p>
+              This project uses mapping apis to plot points for my favorite
+              spots in the city for a do-it-yourself walking tour.
+            </p>
+          </section>
+          <section class="main-section">
+            <img src="images/portfolio-5.png" />
+            <h3>Photo Gallery</h3>
+            <p>
+              This project shows pictures from a recent trip of the viewer and
+              allows them to easily navigate through photos.
+            </p>
+          </section>
+          <section class="main-section">
+            <img src="images/portfolio-6.png" />
+            <h3>Calculator</h3>
+            <p>
+              Someone can enter in the numbers they want, and press the big blue
+              button and get the result.
+            </p>
+          </section>
+        </div>
       </div>
     </main>
     <div id="footer-tag">
@@ -97,20 +104,17 @@
           </contact>
         </div>
         <hr />
-        <div id="mobile-footer">
-          <ul class="list-items">
-              <p>Alyssa Sitto</p>
-              <a href="index.html">BACK TO TOP</a>
+        <div class="footer mobile-footer">
+          <span>Alyssa Sitto</span>
+          <span><a href="index.html">BACK TO TOP</a></span>
         </div>
-        <div class="flex">
-          <nav class="footer-nav">
-            <ul class="large-screen-footer">
-              <li>Alyssa Sitto</li>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-          </nav>
+        <div class="large-screen-footer">
+          <h3 class="footer-name">Alyssa Sitto</h3>
+          <ul class="footer-nav footer">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
         </div>
       </footer>
     </div>
